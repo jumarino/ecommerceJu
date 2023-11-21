@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecommerceJu.Server", "ecommerceJu\Server\ecommerceJu.Server.csproj", "{C54C4E8F-34DE-4A22-9A3E-F2BE574A0604}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerceJu.Server", "ecommerceJu\Server\ecommerceJu.Server.csproj", "{C54C4E8F-34DE-4A22-9A3E-F2BE574A0604}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecommerceJu.Client", "ecommerceJu\Client\ecommerceJu.Client.csproj", "{47AA2425-4F8E-4B65-9104-80DDA801815E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerceJu.Client", "ecommerceJu\Client\ecommerceJu.Client.csproj", "{47AA2425-4F8E-4B65-9104-80DDA801815E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecommerceJu.Shared", "ecommerceJu\Shared\ecommerceJu.Shared.csproj", "{8CEF6248-6864-4D65-B1B6-C293D41C9642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerceJu.Shared", "ecommerceJu\Shared\ecommerceJu.Shared.csproj", "{8CEF6248-6864-4D65-B1B6-C293D41C9642}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

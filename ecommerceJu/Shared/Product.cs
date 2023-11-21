@@ -16,6 +16,11 @@ namespace ecommerceJu.Shared
 
 		[Column (TypeName = "decimal(18,2)")]
 		public decimal Price { get; set; }
+
+		public static implicit operator List<object>(Product v)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }
 
