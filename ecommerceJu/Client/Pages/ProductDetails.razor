@@ -1,10 +1,11 @@
 ﻿@page "/product/{id:int}"
 @inject IProductService ProductService
+@implements IDisposable
 @inject ICartService CartService
 
 @if (product == null)
 {
-    <span>@message</span>
+    <span>@ProductService.Message</span>
 }
 else
 {

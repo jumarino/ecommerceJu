@@ -259,4 +259,11 @@ namespace ecommerceJu.Server.Services.ProductService
                                 .ToListAsync();
         }
     }
+
+    internal class ProductSearchResult
+    {
+        public object Products { get; set; }
+        public int CurrentPage { get; set; }
+        public int Pages { get; set; }
+    }
 }

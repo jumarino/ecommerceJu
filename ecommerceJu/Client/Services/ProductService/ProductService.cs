@@ -76,12 +76,11 @@
         {
             LastSearchText = searchText;
             var result = await _http
-                 .GetFromJsonAsync<ServiceResponse<ProductSearchResult>>($"api/product/search/{searchText}/{page}");
+                 .GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/search/{searchText}/{page}");
             if (result != null && result.Data != null)
             {
-                Products = result.Data.Products;
-                CurrentPage = result.Data.CurrentPage;
-                PageCount = result.Data.Pages;
+                Products = result.Data;
+               
             }
             if (Products.Count == 0) Message = "No products found.";
             ProductsChanged?.Invoke();
