@@ -25,15 +25,15 @@ namespace ecommerceJu.Server.Data
 
             modelBuilder.Entity<ProductType>().HasData(
                     new ProductType { Id = 1, Name = "Default" },
-                    new ProductType { Id = 2, Name = "Paperback" },
-                    new ProductType { Id = 3, Name = "E-Book" },
-                    new ProductType { Id = 4, Name = "Audiobook" },
-                    new ProductType { Id = 5, Name = "Stream" },
-                    new ProductType { Id = 6, Name = "Blu-ray" },
-                    new ProductType { Id = 7, Name = "VHS" },
-                    new ProductType { Id = 8, Name = "PC" },
-                    new ProductType { Id = 9, Name = "PlayStation" },
-                    new ProductType { Id = 10, Name = "Xbox" }
+                    new ProductType { Id = 2, Name = "Coffee Capsula" },
+                    new ProductType { Id = 3, Name = "Cofee Power" },
+                    new ProductType { Id = 4, Name = "Cups" },
+                    new ProductType { Id = 5, Name = "Coffee Machines" },
+                    new ProductType { Id = 6, Name = "Coffee Fan Clothes" },
+                    new ProductType { Id = 7, Name = "Barist Courses" },
+                    new ProductType { Id = 8, Name = "Different Waters" },
+                    new ProductType { Id = 9, Name = "Coffee Tips" },
+                    new ProductType { Id = 10, Name = "Others" }
                 );
 
             modelBuilder.Entity<Category>().HasData(
