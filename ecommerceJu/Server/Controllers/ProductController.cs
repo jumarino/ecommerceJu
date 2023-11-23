@@ -1,6 +1,4 @@
-﻿using ecommerceJu.Server.Services.ProductService;
-using ecommerceJu.Shared;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -67,7 +65,7 @@ namespace ecommerceJu.Server.Controllers
         }
 
         [HttpGet("search/{searchText}/{page}")]
-        public async Task<ActionResult<ServiceResponse<ProductSearchResult>>> SearchProducts(string searchText, int page = 1)
+        public async Task<ActionResult<ServiceResponse<Shared.ProductSearchResult>>> SearchProducts(string searchText, int page = 1)
         {
             var result = await _productService.SearchProducts(searchText, page);
             return Ok(result);

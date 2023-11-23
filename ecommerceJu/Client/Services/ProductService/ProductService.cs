@@ -79,7 +79,9 @@
                  .GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/search/{searchText}/{page}");
             if (result != null && result.Data != null)
             {
-                Products = result.Data;
+                Products = result.Data.Products;
+                CurrentPage = result.Data.CurrentPage;
+                PageCount = result.Data.Pages;
                
             }
             if (Products.Count == 0) Message = "No products found.";
